@@ -17,9 +17,10 @@ class vehicles {
 	public float distanceKmPerL() {
 		return traveledDistance / fuelUsed;
 	}
-
+	
+	//reusing above method
 	public float fuelUsageLPer100Km() {
-		return 100 / (traveledDistance / fuelUsed);
+		return 100 / distanceKmPerL();
 	}
 };
 
